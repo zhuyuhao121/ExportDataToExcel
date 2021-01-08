@@ -43,6 +43,8 @@ private static final String mailHost = "smtp.ym.163.com"; //发件服务器地�
  * 初始化
  *
  * @param isSendEmail 是否发送邮件，true 发送邮件， false 不发送，只把数据保存在本地
+ *                    邮箱支持批量添加，每个邮箱之间用英文分号";"相隔
+ *                    比如：534837240@qq.com;joyce@163.com
  */
 private void init(boolean isSendEmail) {
     ExportBll.getInstance().init(MainActivity.this
@@ -50,10 +52,11 @@ private void init(boolean isSendEmail) {
             , bottomName, topic, emailAccount, emailPwd, mailHost);
     if (isSendEmail) {
         ExportBll.getInstance()
-                .showDialogView(true)//是否显示自带的dialog
+                .showDialogView(true)//是否显示自带的dialog，显示后提示用户输入收件人邮箱
                 .excelExportData(true, getBaseLists());
     } else {
         ExportBll.getInstance()
+                .setRecipientsEmail("534837240@qq.com")//设置收件人邮箱
                 .excelExportData(false, getBaseLists());
     }
 }
@@ -66,7 +69,7 @@ for循环里的添加顺序要跟参数定义中的标题栏顺序一致，否�
 ``` java
 /**
  * 将需要导出的数据按照以下格式转换成字符串
- *
+ * @param allLists： 数据库数据
  * @return
  */
 private List<BaseBean> getBaseLists() {

@@ -1,0 +1,20 @@
+<resources>
+
+<!--    <string name="app_name">lib_base</string>-->
+    <string name="please_enter_the_content">请输入内容</string>
+    <string name="cancel">取消</string>
+    <string name="confirm">确认</string>
+    <string name="email_rules">注：可输入多个邮箱，邮箱之间用";"相隔，请保证邮箱的准确性，否则收不到邮件</string>
+    <string name="email_sent_successfully">邮件已成功发送，请前往邮箱查看</string>
+    <string name="large_data">数据比较大，请耐心等候...</string>
+    <string name="export_data_successfully">导出数据到excel成功</string>
+    <string name="path_for">路径为</string>
+    <string name="export_data_to_excel">导出数据到excel</string>
+    <string name="export_data_to_excel_and_email">导出数据到excel并发送邮件</string>
+    <string name="no_data_can_be_derived">无数据可导出</string>
+    <string name="no_log">暂无日志</string>
+    <string name="please_enter_email">请输入收件人邮箱</string>
+    <string name="name_cannot_be_empty">内容不能为空</string>
+    <string name="email_format_is_incorrect">邮箱格式不正确，请重新输入…</string>
+
+</resources>

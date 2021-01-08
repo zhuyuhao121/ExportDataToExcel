@@ -1,0 +1,20 @@
+<resources>
+
+<!--    <string name="app_name">lib_base</string>-->
+    <string name="please_enter_the_content">Please enter</string>
+    <string name="email_rules">Note: multiple mailboxes can be entered. Use ";" between mailboxes. Apart, please ensure the accuracy of mailbox, otherwise we will not receive mail</string>
+    <string name="cancel">Cancel</string>
+    <string name="confirm">Confirm</string>
+    <string name="email_sent_successfully">The email has been sent successfully, please go to the mailbox to check</string>
+    <string name="large_data">The data is large, please wait patiently...</string>
+    <string name="export_data_successfully">Export data to excel successfully</string>
+    <string name="path_for">Path for</string>
+    <string name="export_data_to_excel">Export data to excel</string>
+    <string name="export_data_to_excel_and_email">Export data to excel and send email</string>
+    <string name="no_data_can_be_derived">No data can be derived</string>
+    <string name="no_log">No log</string>
+    <string name="please_enter_email">Please enter email</string>
+    <string name="name_cannot_be_empty">cannot be blank</string>
+    <string name="email_format_is_incorrect">The email format is not correct, please re-enter it...</string>
+
+</resources>
